@@ -1,0 +1,37 @@
+{
+  "name": "Pst",
+  "version": "0.0.1",
+  "description": "Chat App",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "Postman",
+    "Chat App",
+    "AngularJS"
+  ],
+  "author": {
+    "name": "Kamal Kokne",
+    "email": "kamalkokne4@gmail.com",
+    "url": "http://www.hackingjavascript.blogspot.com"
+  },
+  "homepage": "http://www.hackingjavascript.blogspot.com",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "angular": "~1.5.5",
+    "angular-translate": "^2.11.0",
+    "angular-translate-loader-static-files": "^2.11.0",
+    "angular-ui-router": "~0.2.18",
+    "angular-mocks": "^1.5.5"
+  },
+  "resolutions": {
+    "angular": "~1.5.x"
+  }
+}

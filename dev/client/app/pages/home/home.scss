@@ -1,0 +1,32 @@
+@import '../../../static/style/theme';
+@import '../../../static/style/mixins';
+
+.main {
+    margin-top: 100px;
+}
+
+.chat-box {
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    height: 450px;
+    overflow-y: auto;
+    width: 100%;
+
+    .chat {
+        background-color: $chat;
+        border-radius: 10px;
+        margin: 15px;
+        padding: 10px;
+    }
+}
+
+.selected {
+    color: $selected-text;
+}
+
+.friend-ins {
+    border-bottom: 1px solid $border-color;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px;
+}

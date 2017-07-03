@@ -1,0 +1,25 @@
+<pst-header></pst-header>
+
+<main class="row main">
+    <div class="col-xs-12">
+        <div class="col-md-6 col-xs-12">
+            <div class="chat-box">
+                <div class="chat" ng-if="fObj" ng-repeat="chat in fObj.chats track by $index">
+                    <span ng-if="chat.boolean == 1">You: {{ chat.text }}</span>
+                    <span ng-if="chat.boolean == 2">{{ fObj.nm }}: {{ chat.text }}</span>
+                </div>
+                <div ng-if="!fObj">
+                    <p>Start chat by clicking on a friend's name!</p>
+                </div>
+            </div>
+            <input type="text" ng-model="thisChat">
+            <button type="button" ng-click="submitChat()">Chat</button>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div class="friend-ins"
+                 ng-repeat="a in friends" ng-click="chatThis(a)">
+                {{ a.nm }}
+            </div>
+        </div>
+    </div>
+</main>
